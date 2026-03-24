@@ -133,6 +133,7 @@
                 <div class="hidden md:flex items-center space-x-6">
                     <a href="#home" class="text-gray-600 hover:text-blue-600 font-medium transition">Home</a>
                     <a href="#courses" class="text-gray-600 hover:text-blue-600 font-medium transition">Courses</a>
+                    <a href="#gallery" class="text-gray-600 hover:text-blue-600 font-medium transition">Gallery</a>
                     <a href="#about" class="text-gray-600 hover:text-blue-600 font-medium transition">About</a>
                     <a href="#reviews" class="text-gray-600 hover:text-blue-600 font-medium transition">Reviews</a>
                     <a href="#contact" class="text-gray-600 hover:text-blue-600 font-medium transition">Contact</a>
@@ -162,6 +163,9 @@
                     </a>
                     <a href="#courses" onclick="toggleMenu()" class="block text-lg font-medium text-gray-800 hover:text-blue-600 py-2 border-b border-gray-100">
                         <i class="fas fa-book w-6"></i> Courses
+                    </a>
+                    <a href="#gallery" onclick="toggleMenu()" class="block text-lg font-medium text-gray-800 hover:text-blue-600 py-2 border-b border-gray-100">
+                        <i class="fas fa-image w-6"></i> Gallery
                     </a>
                     <a href="#about" onclick="toggleMenu()" class="block text-lg font-medium text-gray-800 hover:text-blue-600 py-2 border-b border-gray-100">
                         <i class="fas fa-info-circle w-6"></i> About
@@ -482,11 +486,14 @@
                         </div>
                     </div>
 
+                    <!-- Your picture here -->
                     <div class="bg-gray-50 p-5 rounded-2xl border-l-4 border-blue-600">
                         <div class="flex items-center gap-4">
-                            <div class="w-14 h-14 bg-gradient-to-br from-blue-600 to-cyan-500 rounded-full flex items-center justify-center text-white text-xl font-bold">
-                                SD
-                            </div>
+                            <img
+                                src="images/profile.jpg"
+                                alt="Subhodip Das"
+                                class="w-14 h-14 rounded-full object-cover border-2 border-blue-600 shadow-md"
+                            >
                             <div>
                                 <h4 class="font-bold text-lg text-gray-900">Subhodip Das</h4>
                                 <p class="text-blue-600 font-medium">Founder & Lead Instructor</p>
@@ -521,6 +528,41 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 reveal">
+                <span class="text-blue-600 font-semibold uppercase tracking-wide text-sm">Gallery</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mt-2">Inside Our Training Centre</h2>
+                <p class="text-gray-600 mt-4 max-w-2xl mx-auto">
+                    A quick look at our classrooms, learning environment, and student activities.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="overflow-hidden rounded-2xl shadow-lg card-hover reveal">
+                    <img src="images/gallery-1.jpg" alt="Classroom view" class="w-full h-64 object-cover">
+                </div>
+
+                <div class="overflow-hidden rounded-2xl shadow-lg card-hover reveal">
+                    <img src="images/gallery-2.jpg" alt="Students in class" class="w-full h-64 object-cover">
+                </div>
+
+                <div class="overflow-hidden rounded-2xl shadow-lg card-hover reveal">
+                    <img src="images/gallery-3.jpg" alt="Computer lab" class="w-full h-64 object-cover">
+                </div>
+
+                <div class="overflow-hidden rounded-2xl shadow-lg card-hover reveal">
+                    <img src="images/gallery-4.jpg" alt="Training session" class="w-full h-64 object-cover">
+                </div>
+
+                <div class="overflow-hidden rounded-2xl shadow-lg card-hover reveal">
+                    <img src="images/gallery-5.jpg" alt="Institute interior" class="w-full h-64 object-cover">
                 </div>
             </div>
         </div>
@@ -699,6 +741,7 @@
                     <h4 class="font-bold mb-4">Quick Links</h4>
                     <ul class="space-y-2 text-gray-400 text-sm">
                         <li><a href="#courses" class="hover:text-white transition">Our Courses</a></li>
+                        <li><a href="#gallery" class="hover:text-white transition">Gallery</a></li>
                         <li><a href="#about" class="hover:text-white transition">About Us</a></li>
                         <li><a href="#reviews" class="hover:text-white transition">Reviews</a></li>
                         <li><a href="#contact" class="hover:text-white transition">Contact</a></li>
